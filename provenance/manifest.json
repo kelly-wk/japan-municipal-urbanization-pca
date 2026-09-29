@@ -1,0 +1,28 @@
+{
+  "dataset": "Statistical Observations of Municipalities",
+  "official_terms": "https://www.e-stat.go.jp/terms-of-use",
+  "official_sources": {
+    "2024": {
+      "A.xls": {"statInfId": "000040186221", "sha256": "0ba40bbd7aa9aca93ede59f306ab492f3d5b83decca87ddae7b198dffbc1ae83"},
+      "B.xls": {"statInfId": "000040186222", "sha256": "7962eda57272788788d0eb3d48bbbbc64d303e06f2092fe96ac2c552567cac04"},
+      "C.xls": {"statInfId": "000040186223", "sha256": "af5e0a06ba6b22a4308c62acad28d3bcac67088ad7744f9d369ba100854e7b43"},
+      "F.xls": {"statInfId": "000040186226", "sha256": "697c375726b5c4bc59214420010f655b2db7ec3426cc2260dd4878b903cb3732"},
+      "H.xls": {"statInfId": "000040186228", "sha256": "22847f425807a062e9aca90ae2c84c9426f5f100f2c704e0ef9f37068854a2d4"},
+      "I.xls": {"statInfId": "000040186229", "sha256": "b48544c8e82bda5b9dce826e2a0a689e6bf8d98c9ef17dd8381d504a6f230846"}
+    },
+    "2026": {
+      "A.xls": {"statInfId": "000040463584", "sha256": "bff101b575a03ddc5a944cf008a7314cb8a736afb3cbda87465e181db0835ad5"},
+      "B.xls": {"statInfId": "000040463585", "sha256": "59c3460f3c04ea25286fd7e07ddb4963673664e72a849941c3e13c07c0758a18"},
+      "C.xls": {"statInfId": "000040463586", "sha256": "4b4f4144e71b25c95e92057e72189ec6463a0231c82cb7ade7c792ef47c693bb"},
+      "F.xls": {"statInfId": "000040463589", "sha256": "446d5b0d60bdf4086a341707e2db30b0a877dcffda8ee67bf6c0006be7914bf9"},
+      "H.xls": {"statInfId": "000040463591", "sha256": "22eae2589e51b2d5a2a4b74d3d77747c894fb864258856b341153f667076cd8f"},
+      "I.xls": {"statInfId": "000040463592", "sha256": "b76cc27fed59f80f654e9c09b07858fb8c3ede3e767187c9b82983a55d5150d0"}
+    }
+  },
+  "processed_snapshot": {
+    "path": "data/processed/municipal_indicators.csv",
+    "sha256": "374e514e33db92279a9a9bee5974273d27f41b99dbb16d5ed2e6ba9378796d61",
+    "rows": 1917,
+    "primary_analysis_rows": 1740
+  }
+}

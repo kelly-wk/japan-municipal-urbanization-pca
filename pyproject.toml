@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools==75.8.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "japan-municipal-urbanization-pca"
+version = "1.0.0"
+description = "Reproducible PCA study of Japanese municipal urbanization"
+license = {text = "MIT"}
+requires-python = ">=3.9,<3.13"
+dependencies = [
+  "matplotlib==3.9.4",
+  "numpy==2.0.2",
+  "pandas==2.3.3",
+  "scipy==1.13.1",
+  "xlrd==2.0.2",
+]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2"]
+
+[project.scripts]
+urban-pca = "urban_pca.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#2C7A78">
+  <meta name="description" content="A nationwide municipal urbanization axis built from official statistics and validated against later external outcomes.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PCAに基づく日本の市区町村の都市化指標 / PCA-Based Urbanization Index for Japanese Municipalities">
+  <meta property="og:description" content="A nationwide municipal urbanization axis built from official statistics and validated against later external outcomes.">
+  <meta property="og:url" content="https://kelly-wk.github.io/japan-municipal-urbanization-pca/">
+  <meta property="og:image" content="https://kelly-wk.github.io/japan-municipal-urbanization-pca/social-preview.svg">
+  <title>PCAに基づく日本の市区町村の都市化指標 / PCA-Based Urbanization Index for Japanese Municipalities</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="tier-public_code" style="--accent:#2C7A78;--accent-dark:#252A32;--accent-soft:#E3F0EF;--hero-start:#252A32">
+  <a class="skip-link" href="#content">本文へ / Skip to content</a>
+  <header class="project-hero">
+    <div class="hero-inner">
+      <div class="hero-topline">
+        <div class="eyebrow">
+          <span>都市・交通・地域データ分析 / Urban, Mobility &amp; Regional Analytics</span>
+        </div>
+        <p class="tier-badge"><span lang="ja">公開コード</span><span lang="en">Public code</span></p>
+      </div>
+      <h1><span lang="ja">PCAに基づく日本の市区町村の都市化指標</span><span lang="en">PCA-Based Urbanization Index for Japanese Municipalities</span></h1>
+      <div class="hero-summary">
+        <div class="copy-pair lede"><p lang="ja">公式統計から全国市区町村の都市化軸を構築し、将来時点の外部指標で検証した分析。</p><p class="translation" lang="en">A nationwide municipal urbanization axis built from official statistics and validated against later external outcomes.</p></div>
+        <div class="hero-facts">
+          <dl class="project-meta">
+            <div><dt>状態 / Status</dt><dd><span lang="ja">再現済み</span><span lang="en">Reproduced</span></dd></div>
+            <div><dt>言語 / Language</dt><dd>Python</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="method-block">
+        <p class="method-label">技術スタック / Tech Stack</p>
+        <ul class="method-list" aria-label="Methods"><li>Python</li><li>pandas</li><li>NumPy</li><li>SciPy</li><li>PCA</li><li>Bootstrap</li><li>e-Stat ingestion</li><li>External validation</li><li>Sensitivity analysis</li></ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="shell">
+    <section class="evidence-figure" aria-labelledby="figure-title">
+      <div class="section-heading"><p>00</p><h2 id="figure-title">代表的な成果図 <span lang="en">Selected Result Figure</span></h2></div>
+      <figure>
+        <img src="assets/hero.svg" alt="PCAに基づく日本の市区町村の都市化指標の代表的な成果図 / Selected result figure for PCA-Based Urbanization Index for Japanese Municipalities">
+        <figcaption><span lang="ja">公開可能な検証結果から選んだ図です。</span> <span lang="en">Selected from the validation evidence cleared for publication.</span></figcaption>
+      </figure>
+    </section>
+    <section aria-labelledby="highlights-title">
+      <div class="section-heading"><p>01</p><h2 id="highlights-title">主なポイント <span lang="en">Highlights</span></h2></div>
+      <div class="highlight-grid"><article class="highlight">
+          <span class="highlight-number" aria-hidden="true">1</span>
+          <div class="copy-pair"><p lang="ja">e-Statの公式データから、地理的に重複しない1,740市区町村を構成。</p><p class="translation" lang="en">Constructed a geographically non-overlapping set of 1,740 municipalities from official e-Stat data.</p></div>
+        </article><article class="highlight">
+          <span class="highlight-number" aria-hidden="true">2</span>
+          <div class="copy-pair"><p lang="ja">市と特別区・政令市区の重複を解消し、PC1が標準化変数の分散の80.27%を説明。</p><p class="translation" lang="en">Resolved city/ward overlap, with PC1 explaining 80.27% of variance in standardized indicators.</p></div>
+        </article><article class="highlight">
+          <span class="highlight-number" aria-hidden="true">3</span>
+          <div class="copy-pair"><p lang="ja">後年の人口密度、DID比率、農地比率で外部検証し、仕様感度も確認。</p><p class="translation" lang="en">Validated against later population density, DID share, and farmland share, with specification sensitivity checks.</p></div>
+        </article></div>
+    </section>
+
+    <section aria-labelledby="flow-title">
+      <div class="section-heading"><p>02</p><h2 id="flow-title">研究の流れ <span lang="en">Research Flow</span></h2></div>
+      <ol class="flow-grid"><li class="flow-card" data-step="1">
+              <h3><span lang="ja">課題</span><span lang="en">Problem</span></h3>
+              <div class="copy-pair"><p lang="ja">単一指標では捉えにくい市区町村の都市化度を、全国で比較可能な形に要約する。</p><p class="translation" lang="en">Summarize multidimensional municipal urbanization in a form comparable nationwide.</p></div>
+            </li><li class="flow-card" data-step="2">
+              <h3><span lang="ja">方法</span><span lang="en">Method</span></h3>
+              <div class="copy-pair"><p lang="ja">公式統計の人口密度、土地利用、産業構造などを整備し、標準化PCAで合成軸を作る。</p><p class="translation" lang="en">Prepare official density, land-use, and industrial-structure indicators and derive a standardized PCA axis.</p></div>
+            </li><li class="flow-card" data-step="3">
+              <h3><span lang="ja">検証</span><span lang="en">Validation</span></h3>
+              <div class="copy-pair"><p lang="ja">ブートストラップ、代替仕様、後年の未使用外部指標との順位相関で検証する。</p><p class="translation" lang="en">Validate with bootstrap stability, alternative specifications, and rank correlations with later held-out indicators.</p></div>
+            </li><li class="flow-card" data-step="4">
+              <h3><span lang="ja">成果</span><span lang="en">Outcome</span></h3>
+              <div class="copy-pair"><p lang="ja">PC1は80.27%を説明し、外部指標とのSpearman相関は0.498、0.597、-0.738。</p><p class="translation" lang="en">PC1 explains 80.27%; Spearman correlations with held-out outcomes are 0.498, 0.597, and -0.738.</p></div>
+            </li></ol>
+    </section>
+
+    <section class="limitations" aria-labelledby="limits-title">
+      <div class="section-heading"><p>03</p><h2 id="limits-title">限界と適用範囲 <span lang="en">Limitations &amp; Scope</span></h2></div>
+      <ul><li><div class="copy-pair"><p lang="ja">記述的な合成指標であり、公式分類、因果効果、政策上の順位付けではない。</p><p class="translation" lang="en">This is a descriptive composite index, not an official classification, causal effect, or policy ranking.</p></div></li></ul>
+    </section>
+
+    <section class="publication" aria-labelledby="publication-title">
+      <div class="section-heading"><p>04</p><h2 id="publication-title">公開範囲 <span lang="en">Publication Boundary</span></h2></div>
+      <div class="publication-panel">
+        <p class="tier-badge"><span lang="ja">公開コード</span><span lang="en">Public code</span></p>
+        <div class="copy-pair"><p lang="ja">公式公開データ、出典記録、再現コード、検証図を備えた独立リポジトリとして公開可能。</p><p class="translation" lang="en">Official open data, provenance, reproducible code, and validation figures support a standalone public release.</p></div>
+      </div>
+      <div class="cta-grid"><a class="cta" href="https://github.com/kelly-wk/japan-municipal-urbanization-pca"><strong lang="ja">リポジトリ</strong><span lang="en">Repository</span><span aria-hidden="true">↗</span></a><a class="cta" href="https://github.com/kelly-wk/japan-municipal-urbanization-pca/blob/main/REPORT.md"><strong lang="ja">レポート</strong><span lang="en">Report</span><span aria-hidden="true">↗</span></a><a class="cta" href="https://github.com/kelly-wk/japan-municipal-urbanization-pca#reproduce"><strong lang="ja">再現手順</strong><span lang="en">Reproduce</span><span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <footer>
+    <p><span lang="ja">公開レベルはページ上で常に明示されます。</span> <span lang="en">Publication tier is always shown explicitly.</span></p>
+    <p>kelly-wk · japan-municipal-urbanization-pca</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+analysis,n,pc1_explained_variance,score_spearman_vs_primary
+winsorization_1_99,1740,0.81058402,0.99996982
+no_log_transforms,1740,0.68376082,0.95955691
+extended_12_feature_set,792,0.7525809,0.9943131
+original_per_capita_service_rates,1740,0.48401922,0.93531806
+leave_out_population_concentration,1740,0.78159224,0.98581499
+leave_out_services,1740,0.7693936,0.98777945
+leave_out_employment_structure,1740,0.92087865,0.98541422
+granular_ward_geography,1895,0.8200752,0.99984567

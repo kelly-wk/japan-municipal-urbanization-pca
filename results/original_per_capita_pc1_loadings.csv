@@ -1,0 +1,8 @@
+feature,coefficient,correlation_loading
+population_density,0.50753496,0.93421381
+habitable_population_density,0.51096084,0.94051981
+establishments_per_1000,-0.35603577,-0.65535098
+eateries_per_1000,-0.15012308,-0.27632983
+clinics_per_10000,-0.091898578,-0.16915667
+primary_employment_share,-0.44571451,-0.82042163
+tertiary_employment_share,0.35344321,0.65057889

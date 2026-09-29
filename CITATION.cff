@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the repository and the official e-Stat sources listed in THIRD_PARTY_NOTICES.md."
+title: "PCA-Based Urbanization Index for Japanese Municipalities"
+type: software
+authors:
+  - name: "kelly-wk"
+repository-code: "https://github.com/kelly-wk/japan-municipal-urbanization-pca"
+version: 1.0.0
+date-released: 2026-09-29
+license: MIT

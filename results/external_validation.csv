@@ -1,0 +1,4 @@
+outcome,source_column,n,spearman_rho,ci_2_5,ci_97_5,p_value,holm_p_value
+net_migration_per_1000_2024,validation_net_migration_per_1000,1740,0.49801262,0.45791235,0.53465758,1.0205748e-109,1.0205748e-109
+taxable_income_per_taxpayer_2024,validation_taxable_income_per_taxpayer_yen,1740,0.59747856,0.55636602,0.63643435,7.1086956e-169,1.4217391e-168
+dwelling_floor_area_m2_2023,validation_dwelling_floor_area_m2,1059,-0.73817168,-0.77181185,-0.69989036,6.7929753e-183,2.0378926e-182

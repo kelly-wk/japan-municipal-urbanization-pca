@@ -1,0 +1,109 @@
+{
+  "analysis_rows": 1740,
+  "bootstrap_rank_stability": {
+    "ci_2_5": 0.999961449878156,
+    "ci_97_5": 0.9999984332640236,
+    "median_spearman": 0.9999909897875034,
+    "replicates": 1000
+  },
+  "excluded_rows": {
+    "overlapping_hierarchy": 176,
+    "zero_census_population": 1
+  },
+  "external_validation": [
+    {
+      "ci_2_5": 0.4579123527007226,
+      "ci_97_5": 0.5346575848715477,
+      "holm_p_value": 1.020574756133605e-109,
+      "n": 1740,
+      "outcome": "net_migration_per_1000_2024",
+      "p_value": 1.020574756133605e-109,
+      "source_column": "validation_net_migration_per_1000",
+      "spearman_rho": 0.4980126233639479
+    },
+    {
+      "ci_2_5": 0.556366017951831,
+      "ci_97_5": 0.6364343461586004,
+      "holm_p_value": 1.4217391218619502e-168,
+      "n": 1740,
+      "outcome": "taxable_income_per_taxpayer_2024",
+      "p_value": 7.108695609309751e-169,
+      "source_column": "validation_taxable_income_per_taxpayer_yen",
+      "spearman_rho": 0.5974785550735316
+    },
+    {
+      "ci_2_5": -0.7718118459064695,
+      "ci_97_5": -0.699890363503345,
+      "holm_p_value": 2.0378925921941155e-182,
+      "n": 1059,
+      "outcome": "dwelling_floor_area_m2_2023",
+      "p_value": 6.792975307313718e-183,
+      "source_column": "validation_dwelling_floor_area_m2",
+      "spearman_rho": -0.7381716796330298
+    }
+  ],
+  "features": [
+    "population_density",
+    "habitable_population_density",
+    "establishments_per_habitable_km2",
+    "eateries_per_habitable_km2",
+    "clinics_per_habitable_km2",
+    "primary_employment_share",
+    "tertiary_employment_share"
+  ],
+  "pc1_explained_variance_ratio": 0.8026829114541189,
+  "pc2_explained_variance_ratio": 0.09180650813121988,
+  "primary_population_rows": 1741,
+  "published_non_prefecture_rows": 1917,
+  "seed": 20260929,
+  "sensitivity": [
+    {
+      "analysis": "winsorization_1_99",
+      "n": 1740,
+      "pc1_explained_variance": 0.8105840195068503,
+      "score_spearman_vs_primary": 0.9999698224508062
+    },
+    {
+      "analysis": "no_log_transforms",
+      "n": 1740,
+      "pc1_explained_variance": 0.6837608182330555,
+      "score_spearman_vs_primary": 0.9595569066558957
+    },
+    {
+      "analysis": "extended_12_feature_set",
+      "n": 792,
+      "pc1_explained_variance": 0.75258089619677,
+      "score_spearman_vs_primary": 0.9943131002176409
+    },
+    {
+      "analysis": "original_per_capita_service_rates",
+      "n": 1740,
+      "pc1_explained_variance": 0.48401922360922256,
+      "score_spearman_vs_primary": 0.9353180637471339
+    },
+    {
+      "analysis": "leave_out_population_concentration",
+      "n": 1740,
+      "pc1_explained_variance": 0.7815922357322573,
+      "score_spearman_vs_primary": 0.9858149893239062
+    },
+    {
+      "analysis": "leave_out_services",
+      "n": 1740,
+      "pc1_explained_variance": 0.7693936022398791,
+      "score_spearman_vs_primary": 0.9877794479934489
+    },
+    {
+      "analysis": "leave_out_employment_structure",
+      "n": 1740,
+      "pc1_explained_variance": 0.9208786481153823,
+      "score_spearman_vs_primary": 0.9854142165299051
+    },
+    {
+      "analysis": "granular_ward_geography",
+      "n": 1895,
+      "pc1_explained_variance": 0.8200751995794274,
+      "score_spearman_vs_primary": 0.9998456668387978
+    }
+  ]
+}

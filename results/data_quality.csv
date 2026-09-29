@@ -1,0 +1,16 @@
+field,population_rows,finite_rows,missing_or_nonfinite_rows,missing_or_nonfinite_fraction
+population_density,1741,1741,0,0
+habitable_population_density,1741,1741,0,0
+establishments_per_habitable_km2,1741,1741,0,0
+eateries_per_habitable_km2,1741,1741,0,0
+clinics_per_habitable_km2,1741,1741,0,0
+primary_employment_share,1741,1740,1,0.00057438254
+tertiary_employment_share,1741,1740,1,0.00057438254
+did_population_share,1741,815,926,0.53187823
+commercial_establishments_per_habitable_km2,1741,1741,0,0
+retail_stores_per_habitable_km2,1741,1741,0,0
+large_retail_stores_per_habitable_km2,1741,1741,0,0
+cultivated_land_share,1741,1718,23,0.013210798
+validation_net_migration_per_1000,1741,1741,0,0
+validation_taxable_income_per_taxpayer_yen,1741,1741,0,0
+validation_dwelling_floor_area_m2,1741,1059,682,0.39172889
